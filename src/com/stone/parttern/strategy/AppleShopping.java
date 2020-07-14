@@ -2,7 +2,7 @@ package com.stone.parttern.strategy;
 
 public class AppleShopping implements Shopping<Apple> {
 
-    private Double discount;
+    private final Double discount;
 
     public AppleShopping() {
         this(0.8);
