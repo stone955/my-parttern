@@ -11,12 +11,12 @@ public class Main {
         Movable plane = factory.createPlane();
         plane.go();
 
-
-        CarFactory carFactory = new CarFactory();
+        // 工厂方法，抽象工厂的特例，只生产一种产品
+        MovableFactory carFactory = new CarFactory();
         Movable c = carFactory.create();
         c.go();
 
-        PlaneFactory planeFactory = new PlaneFactory();
+        MovableFactory planeFactory = new PlaneFactory();
         Movable p = planeFactory.create();
         p.go();
 
